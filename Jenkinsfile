@@ -16,7 +16,7 @@ agent any
   {
    steps 
    {
-    sh '/hom/bish/Distros/apache-maven-3.6.1/bin/mvn install'
+    sh '/home/bish/Distros/apache-maven-3.6.1/bin/mvn install'
    }
   } 
  
