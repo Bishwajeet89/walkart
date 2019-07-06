@@ -17,7 +17,7 @@ agent any
    steps 
    {
     sh '/home/bish/Distros/apache-maven-3.6.1/bin/mvn clean install -Dv=${BUILD_NUMBER}'
-//    sh 'sshpass -p "bish" ssh bish@172.17.0.4 "JAVA_HOME=/home/bish/Distros/jdk1.8.0_211" "/home/bish/Distros/apache-tomcat-8.5.41/bin/startup.sh"'
+#    sh 'sshpass -p "bish" ssh bish@172.17.0.4 "JAVA_HOME=/home/bish/Distros/jdk1.8.0_211" "/home/bish/Distros/apache-tomcat-8.5.41/bin/startup.sh"'
     
    }
   }
@@ -26,7 +26,7 @@ agent any
   {
    steps
    {
-//    sh 'sshpass -p "bish" scp target/walkart.war bish@172.17.0.4:/home/bish/Distros/apache-tomcat-8.5.41/webapps'
+#    sh 'sshpass -p "bish" scp target/walkart.war bish@172.17.0.4:/home/bish/Distros/apache-tomcat-8.5.41/webapps'
    }
   } 
  
