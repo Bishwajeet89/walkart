@@ -16,6 +16,6 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>walkart</finalName>
+	  <finalName>walkart.${build_no}</finalName>
   </build>
 </project>
