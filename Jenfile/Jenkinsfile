@@ -16,7 +16,8 @@ agent any
   {
    steps 
    {
-    sh '/home/bish/Distros/apache-maven-3.6.1/bin/mvn install' -Dbuild_no=${BUILD_NUMBER}
+    sh '/home/bish/Distros/apache-maven-3.6.1/bin/mvn install -Dbuild_no=${BUILD_NUMBER}'
+  
    }
   }
 
