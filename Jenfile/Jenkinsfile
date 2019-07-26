@@ -2,6 +2,14 @@ pipeline
 {
 agent any
 
+parameters {
+          string(name: 'TAG', defaultValue: '', description: 'Please enter tag name?')
+}
+
+triggers {
+
+}
+
  stages
  {
    stage('GIT Checkout')
