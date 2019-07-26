@@ -7,7 +7,7 @@ parameters {
 }
 
 triggers {
-
+     cron (* * * * *)
 }
 
  stages
