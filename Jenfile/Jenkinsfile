@@ -6,10 +6,6 @@ parameters {
           string(name: 'TAG', defaultValue: '', description: 'Please enter tag name?')
 }
 
-# triggers {
-#     cron('* * * * *')
-# }
-
  stages
  {
    stage('GIT Checkout')
