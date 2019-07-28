@@ -5,7 +5,7 @@ RUN apt-get install -y openjdk-8-jdk
 ADD apache-tomcat-8.5.41.tar.gz /root
 ENV JAVA_HOME /usr 
 COPY target/walkart.war /root/apache-tomcat-8.5.41/webapps
-ENTRYPOINT /root/apache-tomcat-8.5.41/bin/startup.sh && bash
-CMD ["/bin/bash"]
+ENTRYPOINT /root/apache-tomcat-8.5.41/bin/startup.sh
+CMD ["/root/apache-tomcat-8.5.41/bin/startup.sh","/bin/bash"]
 WORKDIR /root
 EXPOSE 8080
