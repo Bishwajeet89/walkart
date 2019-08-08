@@ -1,4 +1,5 @@
 #!/bin/bash
+# This script create containers absed on inputs from user.
 CONT_COUNT=$1
 echo "Creating $CONT_COUNT Containers.."
 sleep 2;
