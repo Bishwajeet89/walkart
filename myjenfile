@@ -13,14 +13,9 @@ pipeline {
             steps {
                 echo 'Hello, JDK'
                 sh 'java -version'
+                input message: 'Deployment Approved to UAT?' 
             }
         }
-       stage('Approval Process'){
-         agent any
-         steps {   
-         input message: 'Approve Deployment?'
-         sleep(10)
-        }
-      }
+      
     }
 }
