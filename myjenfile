@@ -15,5 +15,12 @@ pipeline {
                 sh 'java -version'
             }
         }
+       stage('Approval Process'){
+         agent any
+         steps {   
+         input message: 'Approve Deployment?'
+         sleep(10)
+        }
+      }
     }
 }
