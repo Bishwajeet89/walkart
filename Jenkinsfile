@@ -6,7 +6,7 @@ tools {
   }
 stages {
 	stage('GIT CHECKOUT') {
-	 agent { node { lable 'master'} }
+	 agent { lable 'master' }
      options { timeout(time: 1, unit: 'HOURS') }
       steps {
 	         echo 'Checkout SCM'	 
@@ -14,7 +14,7 @@ stages {
 	   }
     }
     stage('BUILD') {
-	   agent { node { lable 'master'} }
+	   agent { lable 'master' }
 	  steps {
 		     echo 'Build the Project'
 			 sh 'echo "M2_HOME: ${M2_HOME}"'
