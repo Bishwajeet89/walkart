@@ -3,7 +3,7 @@ agent none
 tools {
     maven "Maven 3.6.1"
     jdk "JDK8"
-    //ANTHOME  "ant1.9.14"	
+    ANTHOME "ant1.9.14"
 	
   }
 stages {
@@ -17,7 +17,7 @@ stages {
     }
     stage('BUILD') {
 	   agent any
-	    environment { ANTHOME = tool "ant1.9.14" }
+	    //environment { ANTHOME = tool "ant1.9.14" }
 	  steps {
 		     echo 'Build the Project'
 			 sh 'echo "M2_HOME: ${M2_HOME}"'
