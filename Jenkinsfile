@@ -22,7 +22,7 @@ stages {
 		     echo 'Build the Project'
 			 sh 'echo "M2_HOME: ${M2_HOME}"'
 			 sh 'echo "JAVA_HOME: ${JAVA_HOME}"'
-		         sh 'echo "ANTHOME: ${ANT_HOME}"'
+		         sh 'echo "ANTHOME: ${ANTHOME}"'
 			 sh 'mvn clean install'
 
 		}
