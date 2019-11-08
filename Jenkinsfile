@@ -3,7 +3,7 @@ agent none
 tools {
     maven "Maven 3.6.1"
     jdk "JDK8"
-    ANTHOME  "ant1.9.14"	
+    //ANTHOME  "ant1.9.14"	
 	
   }
 stages {
@@ -21,7 +21,7 @@ stages {
 		     echo 'Build the Project'
 			 sh 'echo "M2_HOME: ${maven}"'
 			 sh 'echo "JAVA_HOME: ${jdk}"'
-		         sh 'echo "ANTHOME: ${ANTHOME}"'
+		         //sh 'echo "ANTHOME: ${ANTHOME}"'
 			 sh 'mvn clean install'
 
 		}
