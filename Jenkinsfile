@@ -17,11 +17,12 @@ stages {
     }
     stage('BUILD') {
 	   agent any
+	    environment { ANTHOME = tool "ant1.9.14" }
 	  steps {
 		     echo 'Build the Project'
-			 sh 'echo "M2_HOME: ${maven}"'
-			 sh 'echo "JAVA_HOME: ${jdk}"'
-		         //sh 'echo "ANTHOME: ${ANTHOME}"'
+			 sh 'echo "M2_HOME: ${M2_HOME}"'
+			 sh 'echo "JAVA_HOME: ${JAVA_HOME}"'
+		         sh 'echo "ANTHOME: ${ANT_HOME}"'
 			 sh 'mvn clean install'
 
 		}
